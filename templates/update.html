@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 mt-5">
+            <form action="" method="POST" class="form-group mb-1 p-2 shadow">
+                <div class="form-group mb-1 p-1">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                </div>
+                <input type="submit" value="Save" class="btn btn-success">
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}

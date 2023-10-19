@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 shadow mt-5 p-3">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <p>Are you sure?</p>
+                <input type="submit" class="btn-danger" value="Delete">
+            </form>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}
